@@ -2,6 +2,10 @@ body {
 	background-color: #444;
 }
 
+body, html {
+	margin: 0;
+}
+
 h1 {
 	font-family: 'Droid Sans Mono';
   	font-size: 60px;

@@ -2,6 +2,10 @@ body {
 	background-color: #444;
 }
 
+body, html {
+	margin: 0;
+}
+
 h1 {
 	font-family: 'Droid Sans Mono';
   	font-size: 60px;
@@ -28,8 +32,6 @@ div#linkbar {
 	border-bottom: solid #fff 1px;
 	background-color: #336699;
 	text-align: center;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
 }
 
 div#linkbar ul {
