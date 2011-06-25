@@ -1,3 +1,10 @@
-<div id="header">
-		<h1>Steven Skelton</h1>
-</div>
+---
+layout: default
+title: Steven Skelton
+---
+
+{% for post in site.posts limit:5 %}
+<h2><a href="{{ post.url }}">{{ post.title }}</a><h2>
+{{ post.content }}
+<em>Posted on {{ post.date | data_to_long_string }}.</em>
+{% endfor %}
