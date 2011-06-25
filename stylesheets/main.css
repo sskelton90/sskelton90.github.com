@@ -24,10 +24,16 @@ a {
 div#linkbar {
 	height: 100%;
 	width: 100%;
-	border-top: solid #000 1px;
-	border-bottom: solid #000 1px;
+	border-top: solid #fff 1px;
+	border-bottom: solid #fff 1px;
 	background-color: #336699;
 	text-align: center;
+}
+
+div#linkbar ul {
+	margin: 0px;
+	padding: 0px;
+	white-space: nowrap;
 }
 
 div#linkbar li {
