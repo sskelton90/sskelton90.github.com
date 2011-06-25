@@ -4,7 +4,7 @@ body {
 
 h1 {
 	font-family: 'Droid Sans Mono';
-  	font-size: 36px;
+  	font-size: 60px;
   	font-style: normal;
   	font-weight: 400;
   	text-decoration: none;
@@ -14,4 +14,30 @@ h1 {
   	line-height: 1.2;
 	color: #eee;
 	text-align: center;
+}
+
+a {
+	color: #eee;
+	text-decoration: none;
+}
+
+div#linkbar {
+	height: 100%;
+	width: 100%;
+	border-top: solid #000 1px;
+	border-bottom: solid #000 1px;
+	background-color: #336699;
+	text-align: center;
+}
+
+div#linkbar li {
+	list-style-type: none;
+	display: inline;
+}
+
+div#linkbar li a {
+	font-family: 'Droid Sans Mono';
+	text-decoration: none;
+	padding: .2em 1em;
+	color: #eee;
 }
