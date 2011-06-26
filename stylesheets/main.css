@@ -1,53 +1,101 @@
-body {
-	background-color: #444;
+html {
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.46, rgb(48,46,48)),
+    color-stop(0.73, rgb(68,68,68))
+    );
+    background-image: -moz-linear-gradient(
+    center bottom,
+    rgb(48,46,48) 46%,
+    rgb(68,68,68) 73%
+    );
+    
 }
 
 body, html {
-	margin: 0;
+    margin: 0;
+    height: 100%;
 }
 
 h1 {
-	font-family: 'Droid Sans Mono';
-  	font-size: 60px;
-  	font-style: normal;
-  	font-weight: 400;
-  	text-decoration: none;
-  	text-transform: capitalize;
-  	letter-spacing: 0em;
-  	word-spacing: 0em;
-  	line-height: 1.2;
-	color: #eee;
-	text-align: center;
+    font-family: 'Droid Sans Mono';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 0em;
+    word-spacing: 0em;
+    line-height: 1.2;
+    color: #eee;
+    text-align: center;
+    margin-top: 10%;
 }
 
 a {
-	color: #eee;
-	text-decoration: none;
+    color: #eee;
+    text-decoration: none;
 }
 
 div#linkbar {
-	height: 100%;
-	width: 100%;
-	border-top: solid #fff 1px;
-	border-bottom: solid #fff 1px;
-	background-color: #336699;
-	text-align: center;
+    height: 100%;
+    width: 100%;
+    border-top: solid #fff 1px;
+    background-color: #336699;
+    text-align: center;
 }
 
-div#linkbar ul {
-	margin: 0px;
-	padding: 0px;
-	white-space: nowrap;
+div#contact {
+    height: 100%;
+    width: 100%;
+    border-bottom: solid #fff 1px;
+    background-color: #336699;
+    text-align: center;
 }
 
-div#linkbar li {
-	list-style-type: none;
-	display: inline;
+div#linkbar ul, div#contact ul {
+    margin: 0px;
+    /*margin-top: 75px;*/
+    white-space: nowrap;
 }
 
-div#linkbar li a {
-	font-family: 'Droid Sans Mono';
-	text-decoration: none;
-	padding: .2em 1em;
-	color: #eee;
+
+div#linkbar li, div#contact li{
+    list-style-type: none;
+    display: inline;
 }
+
+div#linkbar li a, div#contact a{
+    font-family: 'Droid Sans Mono';
+    text-decoration: none;
+    padding: .2em 1em;
+    color: #eee;
+}
+#wrap {
+    min-height: 100%;
+    height: auto;
+height: 100%;}
+
+#main {
+    overflow:auto;
+    padding-bottom: 150px;
+}  /* must be same height as the footer */
+
+#footer {
+    position: relative;
+    margin-top: -300px; /* negative value of footer height */
+    height: 150px;
+    clear:both;
+}
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
