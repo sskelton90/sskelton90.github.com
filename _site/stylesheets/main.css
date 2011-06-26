@@ -55,16 +55,16 @@ a {
 div#linkbar {
     height: 100%;
     width: 100%;
+    /*background-color: #336699;*/
     border-top: solid #fff 1px;
-    background-color: #336699;
+    background-color: #202541;
     text-align: center;
 }
 
 div#contact {
     height: 100%;
-    width: 100%;
-    border-bottom: solid #fff 1px;
-    background-color: #336699;
+    width: 100%;    
+    background-color: #202541;
     text-align: center;
 }
 
