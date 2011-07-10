@@ -14,10 +14,6 @@ html {
     
 }
 
-body, html {
-    margin: 0;
-    height: 100%;
-}
 
 h1 {
     font-family: 'Droid Sans Mono';
@@ -51,64 +47,3 @@ a {
     color: #eee;
     text-decoration: none;
 }
-
-div#linkbar {
-    height: 100%;
-    width: 100%;
-    /*background-color: #336699;*/
-    border-top: solid #fff 1px;
-    background-color: #202541;
-    text-align: center;
-}
-
-div#contact {
-    height: 100%;
-    width: 100%;    
-    background-color: #202541;
-    text-align: center;
-}
-
-div#linkbar ul, div#contact ul {
-    margin: 0px;
-    /*margin-top: 75px;*/
-    white-space: nowrap;
-}
-
-
-div#linkbar li, div#contact li{
-    list-style-type: none;
-    display: inline;
-}
-
-div#linkbar li a, div#contact a{
-    font-family: 'Droid Sans Mono';
-    text-decoration: none;
-    padding: .2em 1em;
-    color: #eee;
-}
-#wrap {
-    min-height: 100%;
-    height: auto;
-height: 100%;}
-
-#main {
-    overflow:auto;
-    padding-bottom: 150px;
-}  /* must be same height as the footer */
-
-#footer {
-    position: relative;
-    margin-top: -300px; /* negative value of footer height */
-    height: 150px;
-    clear:both;
-}
-
-/*Opera Fix*/
-body:before {/* thanks to Maleika (Kohoutec)*/
-    content:"";
-    height:100%;
-    float:left;
-    width:0;
-    margin-top:-32767px;/* thank you Erik J - negate effect of float*/
-}
-
