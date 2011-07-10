@@ -2,7 +2,7 @@
 {
 	background: #202541;
 	padding-top: 20px;
-    height: 279px;
+    height: 285px;
     margin-top: -300px;
     border-top: solid #fff 1px;    
 }
@@ -48,6 +48,14 @@ text-decoration:none;
 font-family:'Droid Sans Mono';
 font-size:15px;
 text-align: center;
+}
+
+#blog p {
+	margin-right: 5px;
+}
+
+#code p {
+	margin-right: 5px;
 }
 
 img {
